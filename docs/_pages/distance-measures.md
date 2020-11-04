@@ -1,1 +1,0 @@
-../_posts/2020-10-30-distance-measures.md
