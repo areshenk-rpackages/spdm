@@ -2,23 +2,33 @@
 % Please edit documentation in R/spd-transport.R
 \name{spd.transport}
 \alias{spd.transport}
-\title{Parallel transport of a tangent vector}
+\title{Transport a tangent vector}
 \usage{
-spd.transport(x, to, from, nsteps = 10)
+spd.transport(x, from, to = NULL, method = "gl", nsteps = NA)
 }
 \arguments{
-\item{x}{A tangent vector (symmetric matrix)}
+\item{x}{A tangent vector (a symmetric matrix)}
+
+\item{from}{The SPD matrix to whose tangent space x belong}
 
 \item{to}{The SPD matrix to whose tangent space to move x}
 
-\item{from}{The SPD matrix to whose tangent space x belongs}
+\item{method}{See details}
 
-\item{nsteps}{The number of steps in the geodesic connecting to and from}
+\item{nsteps}{For parallel transport, the number of steps along the geodesic
+connecting from and to}
 }
 \value{
 A symmetric matrix -- a tangent vector at to.
 }
 \description{
-Parallel transports a vector \code{x} in the tangent space at \code{"from"} to the
-tangent space at \code{"to"} using the Schild's ladder algorithm.
+Transports a tangent vector from one tangent space to another.
+}
+\details{
+Allowable method are
+\itemize{
+ \item{"pt": }{Parallel transport using the Schild's ladder algorithm}
+ \item{"gl": }{Transport from A to B using the GL(n) action \eqn{A -> GAG'}, where
+ \eqn{G = B^{1/2}A^{-1/2}}}
+}
 }

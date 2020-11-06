@@ -23,6 +23,6 @@ Allowable distance measures are
  \item{"cholesky": }{The Frobenius norm of the difference between the cholesky factors
  of \code{x} and \code{y}. Not affinely invariant.}
  \item{"riemannian": }{The Riemmanian distance proposed by Barachant, et al. (2013)}
- \item{"stein": }{The square root of Jensen;Bregman Log determinant divergence}
+ \item{"stein": }{The square root of Jensen-Bregman log determinant divergence}
 }
 }
