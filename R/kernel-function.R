@@ -1,3 +1,5 @@
+#' @importClassesFrom kernlab kernel
+
 spddot <- function(sigma = 1, method = 'logeuclidean'){
 
     rval <- function(x, y = NULL){
