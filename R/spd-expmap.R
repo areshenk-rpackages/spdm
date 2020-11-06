@@ -18,7 +18,7 @@ spd.expmap <- function(x, p = NULL){
         stop('p must be a positive definite matrix')
     }
 
-    p.sqrt <- sqrtm(p)
+    p.sqrt <- sqrtm2(p)
     p.inv.sqrt <- solve(p.sqrt)
     return(p.sqrt %*% expm2(p.inv.sqrt %*% x %*% p.inv.sqrt) %*% p.sqrt)
 

@@ -1,10 +1,12 @@
+#' @importFrom  geigen geigen
+
 # Distance functions
 spd.dist.euclidean <- function(x,y,...){
     norm(x - y, type = 'F')
 }
 
 spd.dist.logeuclidean <- function(x,y,...){
-    norm(logm2(x) - logm(y), type = 'F')
+    norm(logm2(x) - logm2(y), type = 'F')
 }
 
 spd.dist.cholesky <- function(x,y){
