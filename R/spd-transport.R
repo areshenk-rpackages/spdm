@@ -15,7 +15,7 @@
 #'  \eqn{G = B^{1/2}A^{-1/2}}}
 #' }
 #' @return A symmetric matrix -- a tangent vector at to.
-#'
+#' @export
 
 spd.transport <- function(x, from, to = NULL, method = 'gl', nsteps = NA){
 

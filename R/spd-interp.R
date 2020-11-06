@@ -13,6 +13,7 @@
 #'  \item{"logeuclidean": }{Euclidean interpolation in the tangent space.}
 #'  \item{"riemannian": }{Interpolation along the geodesic path from \code{x} to \code{y}}
 #' }
+#' @export
 
 spd.interpolate <- function(x, y, t, method = 'euclidean', ...){
 

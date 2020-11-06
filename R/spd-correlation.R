@@ -6,6 +6,7 @@
 #' @param method A string specifying either "correlation" (default) orf
 #' "partial" correlation.
 #' @return A symmetric, positive-definite matrix.
+#' @export
 
 spd.correlation <- function(x, method = 'correlation'){
 

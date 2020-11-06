@@ -12,6 +12,7 @@
 #' (including the diagonal) into a numeric vector. If input is a numeric vector,
 #' converts the input to a symmetric matrix. Note that, if the input is a vector,
 #' its length must be a triangular number.
+#' @export
 
 spd.vectorize <- function(x, scaling = F){
 

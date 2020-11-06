@@ -5,6 +5,7 @@
 #' @param x A symmetric positive definite matrix
 #' @param p The point on whose tangent space to project x
 #' @return A symmetric matrix.
+#' @export
 
 spd.logmap <- function(x, p = NULL){
 

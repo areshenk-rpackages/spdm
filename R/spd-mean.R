@@ -26,6 +26,7 @@
 #'  returning the midpoint between them using \code{spd.interpolate(..., method = 'riemannian')}}
 #' }
 #' @return The mean of the matrices in \code{x}.
+#' @export
 
 spd.mean <- function(x, method = 'euclidean', ...){
 

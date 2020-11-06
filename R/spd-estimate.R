@@ -29,6 +29,7 @@
 #' In all cases, function will generate a warning if the estimated matrix is
 #' not positive definite.
 #' @return A covariance matrix
+#' @export
 
 
 spd.estimate <- function(x, method = 'linshrink', ...){

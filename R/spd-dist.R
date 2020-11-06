@@ -14,6 +14,7 @@
 #'  \item{"riemannian": }{The Riemmanian distance proposed by Barachant, et al. (2013)}
 #'  \item{"stein": }{The square root of Jensen-Bregman log determinant divergence}
 #' }
+#' @export
 
 spd.dist <- function(x, y, method = 'euclidean', ...){
 

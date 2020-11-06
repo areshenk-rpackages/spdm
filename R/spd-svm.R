@@ -15,6 +15,7 @@
 #' for testing
 #' @param ... Further arguments for kernlab::ksvm.
 #' @return A data.frame with test set labels and predictions.
+#' @export
 
 spd.svm <- function(x, y, p, test.idx, ...){
 

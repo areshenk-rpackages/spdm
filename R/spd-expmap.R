@@ -6,6 +6,7 @@
 #' @param x A symmetric matrix
 #' @param p The point to whose tangent space x belongs
 #' @return A symmetric, positive-definite matrix.
+#' @export
 
 spd.expmap <- function(x, p = NULL){
 
