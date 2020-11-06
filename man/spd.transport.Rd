@@ -9,7 +9,7 @@ spd.transport(x, from, to = NULL, method = "gl", nsteps = NA)
 \arguments{
 \item{x}{A tangent vector (a symmetric matrix)}
 
-\item{from}{The SPD matrix to whose tangent space x belong}
+\item{from}{The SPD matrix to whose tangent space x belongs}
 
 \item{to}{The SPD matrix to whose tangent space to move x}
 

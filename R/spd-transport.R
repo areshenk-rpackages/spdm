@@ -3,7 +3,7 @@
 #' Transports a tangent vector from one tangent space to another.
 #'
 #' @param x A tangent vector (a symmetric matrix)
-#' @param from The SPD matrix to whose tangent space x belong
+#' @param from The SPD matrix to whose tangent space x belongs
 #' @param to The SPD matrix to whose tangent space to move x
 #' @param method See details
 #' @param nsteps For parallel transport, the number of steps along the geodesic
@@ -20,7 +20,7 @@
 spd.transport <- function(x, from, to = NULL, method = 'gl', nsteps = NA){
 
     if (!'s.mat' %in% input.type(x)){
-        stop('x must be a positive definite matrix')
+        stop('x must be a symmetric matrix')
     }
     if (!'spd.mat' %in% input.type(to)){
         stop('to must be a positive definite matrix')
