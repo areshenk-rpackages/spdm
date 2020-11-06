@@ -1,3 +1,6 @@
+#' @importFrom nlshrink linshrink_cov nlshrink_cov
+#' @importFrom huge huge huge.select
+
 spd.estimate.sample <- function(x, ...){
     cov(x, ...)
 }
