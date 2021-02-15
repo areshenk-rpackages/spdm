@@ -9,7 +9,7 @@ title: "About"
 The package can be installed directly from the Gitlab repository using the `devtools` package with
 
 ```r
-devtools::install_git('https://github.com/areshenk/spdm')
+devtools::install_git('https://github.com/areshenk-rpackages/spdm')
 ```
 
 Alternately, the repository can be cloned to a local machine and installed through the terminal by running

@@ -15,7 +15,7 @@ google_analytics_id: ''
 navigation: 2
 
 # URL to source code, used in _includes/footer.html
-codeurl: 'https://github.com/areshenk/spdm'
+codeurl: 'https://github.com/areshenk-rpackages/spdm'
 
 # Default categories (in order) to appear in the navigation
 sections: [
