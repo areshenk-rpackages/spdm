@@ -4,7 +4,7 @@
 #'
 #' @param x A data matrix, where rows are observations and columns are variables
 #' @param method Method of covariance estimation. See details
-#' @param ... Additional arguments passed toe stimation functions. See details.
+#' @param ... Additional arguments passed to estimation functions. See details.
 #' @details Allowable estimation methods are:
 #' \itemize{
 #'  \item{"sample": }{The ordinary sample covariance. Generally a poor choice in
@@ -37,6 +37,9 @@ spd.estimate <- function(x, method = 'linshrink', ...){
     if (!is.matrix(x)){
         stop('Input x must be a matrix')
     }
+
+    if (!method %in% c('sample', 'linshrink', 'nlshrink', 'glasso'))
+        stop('Unrecognized method')
 
     e <- switch(method,
                 sample    = spd.estimate.sample(x, ...),

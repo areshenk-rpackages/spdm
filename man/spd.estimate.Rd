@@ -11,7 +11,7 @@ spd.estimate(x, method = "linshrink", ...)
 
 \item{method}{Method of covariance estimation. See details}
 
-\item{...}{Additional arguments passed toe stimation functions. See details.}
+\item{...}{Additional arguments passed to estimation functions. See details.}
 }
 \value{
 A covariance matrix
