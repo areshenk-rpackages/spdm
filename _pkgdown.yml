@@ -1,0 +1,42 @@
+url: ~
+template:
+  bootstrap: 5
+  bootswatch: lux
+
+home:
+  title: Symmetric, positive-definite matrices in R
+  description: >
+    spdm is an R package for the geometry respecting analysis of symmetric,
+    positive-definite matrices (i.e. covariance matrices).
+  strip_header: false
+
+authors:
+  Corson N. Areshenkoff:
+    href: "https://areshenk.github.io/"
+    html: "<img src='https://areshenk.github.io/about/sidebar/avatar.jpg' width=72>"
+
+reference:
+  - title: Basic operations
+    contents:
+      - '`spd.dist`'
+      - '`spd.interpolate`'
+      - '`spd.mean`'
+      - '`spd.correlation`'
+      - '`spd.vectorize`'
+      - '`spd.estimate`'
+  - title: Geometric operations
+    contents:
+      - '`spd.logmap`'
+      - '`spd.expmap`'
+      - '`spd.transport`'
+      - '`spd.translate`'
+      - '`spd.whiten`'
+  - title: Data Analysis
+    contents:
+      - '`spd.dimred`'
+  - title: Data
+    contents:
+      - '`bold`'
+  - title: Internal utilities
+    contents:
+      - '`is.spd`'
