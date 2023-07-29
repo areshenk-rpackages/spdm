@@ -2,18 +2,19 @@ spd.dimred.congedo <- function(X, k = 2, ...){
 
     n <- length(X)
     S <- matrix(0, nrow = nrow(X[[1]]), ncol = ncol(X[[1]]))
-    W <- matrix(1/n, n, n)
+    W <- matrix(1/(n^2 - n), n, n)
     Xisqrt <- lapply(X, isqrtm2)
-    for (i in 1:n) {
-        for (j in 1:i) {
+    for (j in 2:n) {
+        for (i in 1:(j-1)) {
             L <- logm2(Xisqrt[[i]] %*% X[[j]] %*% Xisqrt[[i]])
             S <- S + W[i,j] * L %*% L
         }
     }
-    Z <- eigen(S)$vectors[,1:k]
+    eig <- eigen(S)
+    Z <- eig$vectors[,1:k]
 
     Xred <- lapply(X, function(i) t(Z) %*% i %*% Z)
-    ret <- list(Xred = Xred, Z = Z)
+    ret <- list(Xred = Xred, Z = Z, eigenvalues = eig$values[1:k])
     return(ret)
 }
 

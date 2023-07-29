@@ -1,4 +1,4 @@
-#' @importFrom nlshrink linshrink_cov nlshrink_cov
+#' @importFrom nlshrink linshrink_cov
 #' @importFrom huge huge huge.select
 
 spd.estimate.sample <- function(x, ...){
@@ -10,7 +10,7 @@ spd.estimate.linshrink <- function(x, ...){
 }
 
 spd.estimate.nlshrink <- function(x, ...){
-    nlshrink_cov(x, ...)
+    nlshrink_analytical(x, ...)
 }
 
 spd.estimate.glasso <- function(x, ...){
