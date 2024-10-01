@@ -18,6 +18,14 @@ knitr::opts_chunk$set(
 )
 ```
 
+My own neuroimaging work frequently uses covariance centering in order to
+isolate specific task changes in fMRI functional connectivity, or to filter
+out baseline subject differences. The mechanics underlying this centering are
+fairly complex, but **spdm** provide a convenient a flexible wrapper function
+for centering covariance matrix valued data using the `spd.center()` function.
+
+### Tutorial
+
 **spdm** includes a sample neuroimaging dataset containing standardized BOLD 
 timecourses from 5 subjects in each of 5 different conditions. This dataframe
 contains fields for Subject and Condition, as well as a Data field containing a
@@ -160,6 +168,27 @@ as these observations have been aligned across subjects. Note that this kind
 of centering has not succeeded in eliminating subject level clustering, since in
 addition to subject level differences, subject-by-task *interactions* also tend
 to be much larger than pure task effects.
+
+### Caveats
+
+Although I intend to write a more formal description of this issue in the near 
+future, covariance centering causes issues of interpretation that are worth
+discussing here at a high-level.
+
+Given a covariance matrix $\Sigma$, entry $(i,j)$ has an unambiguous interpretation
+as the covariance between variables $i$ and $i$. After centering by parallel 
+transport -- as in done by `spd.center` -- the resulting entry $(i,j)$ in the 
+centered matrix $\bar{\Sigma}$ is actually a linear combination of the entries
+in $\Sigma$, and so doesn't necessary have an unambiguous interpretation in
+terms of the original variables. This problem is exacerbated when transporting
+over longer distances, which is the primary motivation for centering to the
+grand mean, since this value minimizes the average (squared) distance to the
+individual observations.
+
+It is possible to explicitly quantify the contributions of each covariance to
+the value of the centered covariances; but there is no general, principled method 
+of identifying how much overall distortion has occurred (although this is a major 
+current interest of mine).
 
 ### References
 
