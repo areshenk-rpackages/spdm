@@ -1,0 +1,10 @@
+pandoc: '3.2'
+pkgdown: 2.1.0
+pkgdown_sha: ~
+articles:
+  functions/centering/center_guide: functions/centering/center_guide.html
+  functions/interpolate/interp_guide: functions/interpolate/interp_guide.html
+last_built: 2024-10-01T20:45Z
+urls:
+  reference: areshenk-rpackages.github.io/spdm/reference
+  article: areshenk-rpackages.github.io/spdm/articles
