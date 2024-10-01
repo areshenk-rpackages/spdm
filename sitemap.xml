@@ -1,26 +1,72 @@
-<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>areshenk-rpackages.github.io/spdm/404.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/LICENSE-text.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/articles/functions/centering/center_guide.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/articles/functions/interpolate/interp_guide.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/articles/index.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/authors.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/index.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/bold.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/index.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/is.spd.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/spd.center.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/spd.correlation.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/spd.dimred.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/spd.dist.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/spd.estimate.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/spd.expmap.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/spd.interpolate.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/spd.logmap.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/spd.mean.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/spd.translate.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/spd.transport.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/spd.vectorize.html</loc></url>
-<url><loc>areshenk-rpackages.github.io/spdm/reference/spd.whiten.html</loc></url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/404.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/articles/functions/centering/center_guide.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/articles/functions/interpolate/interp_guide.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/authors.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/index.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/bold.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/is.spd.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/spd.center.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/spd.correlation.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/spd.dimred.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/spd.dist.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/spd.estimate.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/spd.expmap.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/spd.interpolate.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/spd.logmap.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/spd.mean.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/spd.translate.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/spd.transport.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/spd.vectorize.html</loc>
+  </url>
+  <url>
+    <loc>areshenk-rpackages.github.io/spdm/reference/spd.whiten.html</loc>
+  </url>
 </urlset>
-
