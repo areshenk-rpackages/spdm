@@ -2,6 +2,12 @@ url: areshenk-rpackages.github.io/spdm/
 template:
   bootstrap: 5
   bootswatch: lux
+  bslib:
+    bg: '#F6F9FA'
+    fg: '#000000'
+    pkgdown-nav-height: 100px
+navbar:
+  bg: dark
 
 home:
   title: Symmetric, positive-definite matrices in R
@@ -34,6 +40,7 @@ reference:
   - title: Data Analysis
     contents:
       - '`spd.dimred`'
+      - '`spd.center`'
   - title: Data
     contents:
       - '`bold`'
